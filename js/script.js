@@ -824,3 +824,10 @@ document.getElementById('clear-btn').addEventListener('click', function(){
 
 
 // ------------------- call history clear js end --------------------
+
+const historyInnerText = callHistoryContainer.innerText;
+console.log(historyInnerText);
+
+// অন্য container এ সেই text বসাও
+const historyContainer = document.getElementById('history-container');
+historyContainer.innerText = historyInnerText;
