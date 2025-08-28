@@ -812,3 +812,15 @@ document.getElementById('call-btn-9').addEventListener('click', function () {
 
 // ---------------------- call and call history add js end ------------------------
 
+// ------------------- call history clear js start --------------------
+
+document.getElementById('clear-btn').addEventListener('click', function(){
+    callHistoryContainer.innerHTML = '';
+    const noCallHistoryMessage = document.createElement('p');
+    noCallHistoryMessage.innerText = 'No call history';
+    noCallHistoryMessage.classList.add('text-[#5c5c5c]', 'text-center')
+    callHistoryContainer.appendChild(noCallHistoryMessage);
+});
+
+
+// ------------------- call history clear js end --------------------
